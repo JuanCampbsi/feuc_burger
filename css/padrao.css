@@ -145,6 +145,8 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+   
+  margin-top: 24px;
 }
 
 footer p {
@@ -379,4 +381,72 @@ footer p {
   .melhores-receitas .melhores-receitas__texto p {
     padding-right: 14rem;
   }
+
+
+  section .content {
+    width: 100%;
+    margin-top: auto;
+    padding:20;
+    background: #FBE391;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+  
+    display: flex;
+    
+    justify-content:  center;
+    align-items: center;
+    
+  
+    
+  }
+
+  .content form{ 
+    width: 100%;
+    max-width: 450px;
+  }
+ .content  form input{
+    margin-top: 8px;
+  }
+  
+   .content  form .input-group{
+    display: flex;
+  }
+  
+   .content form .input-group input + input{
+    margin-left: 8px;
+  }
+
+
+
+
+  .content form input{
+    width: 100%;
+    height: 50px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    
+  }
+  
+  .content .button {
+    width: 100%;
+    height: 50px;
+    background:  #F46700;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 50px;
+    transition: filter 0.2s;
+    padding: 0 24px;
+  }
+
+  
 }
+
