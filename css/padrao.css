@@ -1,0 +1,382 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header .logo {
+  width: 40%;
+}
+
+header .menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+header .menu a {
+  margin-left: 30px;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s all ease-in;
+}
+
+header .menu a.page {
+  font-weight: bold;
+}
+
+header .menu a:hover {
+  color: #c79188;
+}
+
+header .menu a:first-child {
+  margin-left: 0;
+}
+
+.melhores-receitas {
+  width: 100%;
+  background: #fdefa0;
+  border-radius: 30px;
+  padding: 2rem 15px 0 15px;
+  margin-bottom: 3rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+}
+
+.melhores-receitas .melhores-receitas__texto {
+  width: 100%;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.melhores-receitas .melhores-receitas__texto h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.melhores-receitas .melhores-receitas__texto p {
+  line-height: 28px;
+  color: rgb(17, 17, 17, 0.7);
+}
+
+.melhores-receitas .melhores-receitas__chefe {
+  width: 100%;
+  text-align: center;
+}
+
+/* MAIS ACESSADAS */
+.mais-acessadas {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.mais-acessadas h2 {
+  font-weight: bold;
+  color: #111111;
+  font-size: 24px;
+  margin-bottom: 1.4rem;
+  display: block;
+  width: 100%;
+}
+
+.mais-acessadas .mais-acessadas__card {
+  width: 100%;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+}
+
+.mais-acessadas .mais-acessadas__card p.nome {
+  font-size: 18px;
+  color: #111111;
+  line-height: 21px;
+  margin-bottom: 0.4rem;
+}
+
+.mais-acessadas .mais-acessadas__card p.autor {
+  font-size: 14px;
+  color: #777;
+}
+
+.mais-acessadas .mais-acessadas__card .thumbnail {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+}
+.mais-acessadas .mais-acessadas__card .thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  width: 100%;
+  background: rgb(22, 22, 22);
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+footer p {
+  font-size: 14px;
+  color: #999999;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  background: rgba(0, 0, 0, 0.4);
+  visibility: visible;
+  transition: 0.3s all ease-in-out;
+}
+
+.modal-overlay .modal-content {
+  width: 100%;
+  max-width: 660px;
+  background: rgb(245, 245, 245);
+  padding: 25px;
+  margin: 15px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-overlay .modal-content .modal-close {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 113px;
+  bottom: 1rem;
+}
+
+.modal-overlay .modal-content .modal-close p {
+  font-size: 14px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.modal-overlay .modal-content .modal-close p:hover {
+  font-size: 14px;
+  color: #000;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.modal-overlay .modal-content .thumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+.modal-overlay .modal-content .thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-overlay .modal-content .conteudo-modal {
+  margin-bottom: 2rem;
+}
+
+.modal-overlay .modal-content .conteudo-modal p.nome {
+  font-size: 24px;
+  color: #111111;
+  line-height: 21px;
+  margin-bottom: 1rem;
+}
+
+.modal-overlay .modal-content .conteudo-modal p.autor {
+  font-size: 18px;
+  color: #777;
+}
+
+/* SOBRE NOS */
+.sobre-nos {
+  width: 100%;
+}
+
+.sobre-nos h2 {
+  font-weight: bold;
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.sobre-nos p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 2rem;
+}
+
+.sobre-nos h3 {
+  font-size: 20px;
+  color: #111111;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* BREAKPOINT 576px */
+@media (min-width: 36em) {
+  .container {
+    max-width: 540px;
+  }
+
+  .modal-overlay .modal-content .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* BREAKPOINT 768px */
+@media (min-width: 48em) {
+  .container {
+    max-width: 720px;
+  }
+
+  header .logo {
+    width: 20%;
+  }
+
+  header .menu {
+    width: 80%;
+  }
+
+  .melhores-receitas .melhores-receitas__texto {
+    width: 60%;
+    margin-bottom: 0;
+    padding-left: 2rem;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .melhores-receitas .melhores-receitas__texto p {
+    padding-right: 5rem;
+  }
+
+  .melhores-receitas .melhores-receitas__chefe {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .mais-acessadas .mais-acessadas__card {
+    width: calc(33.33% - 10px);
+    margin: 0 5px 1rem 5px;
+    padding: 0;
+  }
+
+  .mais-acessadas .mais-acessadas__card:nth-child(3n + 1) {
+    margin: 0 10px 1rem 0;
+  }
+
+  .mais-acessadas .mais-acessadas__card:nth-child(3n + 3) {
+    margin: 0 0 1rem 10px;
+  }
+}
+
+/* BREAKPOINT 992px */
+@media (min-width: 62em) {
+  .container {
+    max-width: 960px;
+  }
+
+  .melhores-receitas {
+    min-height: 366px;
+  }
+
+  .melhores-receitas .melhores-receitas__texto {
+    width: 50%;
+  }
+
+  .melhores-receitas .melhores-receitas__texto p {
+    padding-right: 8rem;
+  }
+
+  .melhores-receitas .melhores-receitas__chefe {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+/* BREAKPOINT 1200px */
+@media (min-width: 75em) {
+  .container {
+    max-width: 1140px;
+  }
+
+  header .logo {
+    width: 15%;
+  }
+
+  header .menu {
+    width: 85%;
+  }
+
+  .melhores-receitas .melhores-receitas__texto p {
+    padding-right: 14rem;
+  }
+}
