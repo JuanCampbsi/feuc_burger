@@ -31,17 +31,17 @@
       </div><!-- /container -->
       </header>
     <!-- FIM HEADER -->
-<section>
+<section class="cadastro">
     <div class="content">
      
       <form >
         <input placeholder="Nome do Usuário"/>
-        <input type="email" placeholder="E-mail"/>
-        <input placeholder="Whatsapp"/>
+        <input type="email" placeholder="E-mail" onblur="validacaoEmail(f1.email)"/>
+        <input placeholder="Whatsapp"  onkeypress="return SomenteNumero(event);"/>
 
         <div class="input-group">
           <input placeholder="Cidade"/>
-          <input placeholder="UF" />
+          <input placeholder="UF" onkeyup="limitarInput(this)" />
         </div>
 
         <button class="button" type="submit">Cadastrar</button>
@@ -54,7 +54,7 @@
 
     <!-- INICIO FOOTER -->
     <footer>
-      <p>Todos os direitos reservados @Feuc - BSI.</p>
+      <p>Todos os direitos reservados @Feuc - BSI - Disciplina programação Web I.</p>
     </footer>
     <!-- FIM FOOTER -->
 
